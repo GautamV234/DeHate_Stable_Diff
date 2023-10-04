@@ -1,0 +1,73 @@
+Collecting test-tube
+  Downloading test_tube-0.7.5.tar.gz (21 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting pandas>=0.20.3
+  Downloading pandas-2.1.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.3/12.3 MB 60.6 MB/s eta 0:00:00
+Requirement already satisfied: numpy>=1.13.3 in /usr/local/lib/python3.10/site-packages (from test-tube) (1.26.0)
+Requirement already satisfied: imageio>=2.3.0 in /usr/local/lib/python3.10/site-packages (from test-tube) (2.9.0)
+Requirement already satisfied: tensorboard>=1.15.0 in /usr/local/lib/python3.10/site-packages (from test-tube) (2.14.1)
+Requirement already satisfied: torch>=1.1.0 in /usr/local/lib/python3.10/site-packages (from test-tube) (2.0.1)
+Requirement already satisfied: future in /usr/local/lib/python3.10/site-packages (from test-tube) (0.18.3)
+Requirement already satisfied: pillow in /usr/local/lib/python3.10/site-packages (from imageio>=2.3.0->test-tube) (10.0.1)
+Collecting tzdata>=2022.1
+  Downloading tzdata-2023.3-py2.py3-none-any.whl (341 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 341.8/341.8 kB 29.6 MB/s eta 0:00:00
+Collecting pytz>=2020.1
+  Downloading pytz-2023.3.post1-py2.py3-none-any.whl (502 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 502.5/502.5 kB 39.9 MB/s eta 0:00:00
+Collecting python-dateutil>=2.8.2
+  Downloading python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 247.7/247.7 kB 24.8 MB/s eta 0:00:00
+Requirement already satisfied: six>1.9 in /usr/local/lib/python3.10/site-packages (from tensorboard>=1.15.0->test-tube) (1.16.0)
+Requirement already satisfied: werkzeug>=1.0.1 in /usr/local/lib/python3.10/site-packages (from tensorboard>=1.15.0->test-tube) (3.0.0)
+Requirement already satisfied: grpcio>=1.48.2 in /usr/local/lib/python3.10/site-packages (from tensorboard>=1.15.0->test-tube) (1.59.0)
+Requirement already satisfied: markdown>=2.6.8 in /usr/local/lib/python3.10/site-packages (from tensorboard>=1.15.0->test-tube) (3.4.4)
+Requirement already satisfied: absl-py>=0.4 in /usr/local/lib/python3.10/site-packages (from tensorboard>=1.15.0->test-tube) (2.0.0)
+Requirement already satisfied: setuptools>=41.0.0 in /usr/local/lib/python3.10/site-packages (from tensorboard>=1.15.0->test-tube) (65.6.3)
+Requirement already satisfied: tensorboard-data-server<0.8.0,>=0.7.0 in /usr/local/lib/python3.10/site-packages (from tensorboard>=1.15.0->test-tube) (0.7.1)
+Requirement already satisfied: google-auth<3,>=1.6.3 in /usr/local/lib/python3.10/site-packages (from tensorboard>=1.15.0->test-tube) (2.23.2)
+Requirement already satisfied: google-auth-oauthlib<1.1,>=0.5 in /usr/local/lib/python3.10/site-packages (from tensorboard>=1.15.0->test-tube) (1.0.0)
+Requirement already satisfied: requests<3,>=2.21.0 in /usr/local/lib/python3.10/site-packages (from tensorboard>=1.15.0->test-tube) (2.28.2)
+Requirement already satisfied: protobuf>=3.19.6 in /usr/local/lib/python3.10/site-packages (from tensorboard>=1.15.0->test-tube) (4.24.3)
+Requirement already satisfied: jinja2 in /usr/local/lib/python3.10/site-packages (from torch>=1.1.0->test-tube) (3.1.2)
+Requirement already satisfied: nvidia-cublas-cu11==11.10.3.66 in /usr/local/lib/python3.10/site-packages (from torch>=1.1.0->test-tube) (11.10.3.66)
+Requirement already satisfied: triton==2.0.0 in /usr/local/lib/python3.10/site-packages (from torch>=1.1.0->test-tube) (2.0.0)
+Requirement already satisfied: filelock in /usr/local/lib/python3.10/site-packages (from torch>=1.1.0->test-tube) (3.12.4)
+Requirement already satisfied: nvidia-cuda-cupti-cu11==11.7.101 in /usr/local/lib/python3.10/site-packages (from torch>=1.1.0->test-tube) (11.7.101)
+Requirement already satisfied: nvidia-cudnn-cu11==8.5.0.96 in /usr/local/lib/python3.10/site-packages (from torch>=1.1.0->test-tube) (8.5.0.96)
+Requirement already satisfied: sympy in /usr/local/lib/python3.10/site-packages (from torch>=1.1.0->test-tube) (1.12)
+Requirement already satisfied: nvidia-cusolver-cu11==11.4.0.1 in /usr/local/lib/python3.10/site-packages (from torch>=1.1.0->test-tube) (11.4.0.1)
+Requirement already satisfied: nvidia-nccl-cu11==2.14.3 in /usr/local/lib/python3.10/site-packages (from torch>=1.1.0->test-tube) (2.14.3)
+Requirement already satisfied: nvidia-nvtx-cu11==11.7.91 in /usr/local/lib/python3.10/site-packages (from torch>=1.1.0->test-tube) (11.7.91)
+Requirement already satisfied: nvidia-cuda-nvrtc-cu11==11.7.99 in /usr/local/lib/python3.10/site-packages (from torch>=1.1.0->test-tube) (11.7.99)
+Requirement already satisfied: nvidia-cufft-cu11==10.9.0.58 in /usr/local/lib/python3.10/site-packages (from torch>=1.1.0->test-tube) (10.9.0.58)
+Requirement already satisfied: nvidia-curand-cu11==10.2.10.91 in /usr/local/lib/python3.10/site-packages (from torch>=1.1.0->test-tube) (10.2.10.91)
+Requirement already satisfied: nvidia-cuda-runtime-cu11==11.7.99 in /usr/local/lib/python3.10/site-packages (from torch>=1.1.0->test-tube) (11.7.99)
+Requirement already satisfied: networkx in /usr/local/lib/python3.10/site-packages (from torch>=1.1.0->test-tube) (3.1)
+Requirement already satisfied: nvidia-cusparse-cu11==11.7.4.91 in /usr/local/lib/python3.10/site-packages (from torch>=1.1.0->test-tube) (11.7.4.91)
+Requirement already satisfied: typing-extensions in /usr/local/lib/python3.10/site-packages (from torch>=1.1.0->test-tube) (4.8.0)
+Requirement already satisfied: wheel in /usr/local/lib/python3.10/site-packages (from nvidia-cublas-cu11==11.10.3.66->torch>=1.1.0->test-tube) (0.40.0)
+Requirement already satisfied: cmake in /usr/local/lib/python3.10/site-packages (from triton==2.0.0->torch>=1.1.0->test-tube) (3.27.6)
+Requirement already satisfied: lit in /usr/local/lib/python3.10/site-packages (from triton==2.0.0->torch>=1.1.0->test-tube) (17.0.2)
+Requirement already satisfied: rsa<5,>=3.1.4 in /usr/local/lib/python3.10/site-packages (from google-auth<3,>=1.6.3->tensorboard>=1.15.0->test-tube) (4.9)
+Requirement already satisfied: cachetools<6.0,>=2.0.0 in /usr/local/lib/python3.10/site-packages (from google-auth<3,>=1.6.3->tensorboard>=1.15.0->test-tube) (5.3.1)
+Requirement already satisfied: pyasn1-modules>=0.2.1 in /usr/local/lib/python3.10/site-packages (from google-auth<3,>=1.6.3->tensorboard>=1.15.0->test-tube) (0.3.0)
+Requirement already satisfied: requests-oauthlib>=0.7.0 in /usr/local/lib/python3.10/site-packages (from google-auth-oauthlib<1.1,>=0.5->tensorboard>=1.15.0->test-tube) (1.3.1)
+Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.10/site-packages (from requests<3,>=2.21.0->tensorboard>=1.15.0->test-tube) (3.4)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.10/site-packages (from requests<3,>=2.21.0->tensorboard>=1.15.0->test-tube) (2022.12.7)
+Requirement already satisfied: charset-normalizer<4,>=2 in /usr/local/lib/python3.10/site-packages (from requests<3,>=2.21.0->tensorboard>=1.15.0->test-tube) (3.1.0)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /usr/local/lib/python3.10/site-packages (from requests<3,>=2.21.0->tensorboard>=1.15.0->test-tube) (1.26.15)
+Requirement already satisfied: MarkupSafe>=2.1.1 in /usr/local/lib/python3.10/site-packages (from werkzeug>=1.0.1->tensorboard>=1.15.0->test-tube) (2.1.3)
+Requirement already satisfied: mpmath>=0.19 in /usr/local/lib/python3.10/site-packages (from sympy->torch>=1.1.0->test-tube) (1.3.0)
+Requirement already satisfied: pyasn1<0.6.0,>=0.4.6 in /usr/local/lib/python3.10/site-packages (from pyasn1-modules>=0.2.1->google-auth<3,>=1.6.3->tensorboard>=1.15.0->test-tube) (0.5.0)
+Requirement already satisfied: oauthlib>=3.0.0 in /usr/local/lib/python3.10/site-packages (from requests-oauthlib>=0.7.0->google-auth-oauthlib<1.1,>=0.5->tensorboard>=1.15.0->test-tube) (3.2.2)
+Building wheels for collected packages: test-tube
+  Building wheel for test-tube (setup.py): started
+  Building wheel for test-tube (setup.py): finished with status 'done'
+  Created wheel for test-tube: filename=test_tube-0.7.5-py3-none-any.whl size=25329 sha256=68f60d7d142a8a4cde40b061dc680d2570c8a99a31419bb1e29bd4020d3c1ca9
+  Stored in directory: /root/.cache/pip/wheels/28/d4/8b/1aeb47c0dedd931b8e6aec55a8091864a69ac6f0adc5b12ea9
+Successfully built test-tube
+Installing collected packages: pytz, tzdata, python-dateutil, pandas, test-tube
+Successfully installed pandas-2.1.1 python-dateutil-2.8.2 pytz-2023.3.post1 test-tube-0.7.5 tzdata-2023.3
